@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Check if PYFILE environment variable exists
+if [ -z "$PYFILE" ]; then
+  echo "PYFILE environment variable not set."
+  exit 1
+fi
+
+# Check if the specified file exists
+if [ ! -f "$PYFILE" ]; then
+  echo "File specified in PYFILE environment variable does not exist."
+  exit 1
+fi
+
+# Get the filename and extension
+filename=$(basename -- "$PYFILE")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+# Compile the Python script
+python -m py_compile "$PYFILE"
+
+# Check if compilation was successful
+if [ $? -eq 0 ]; then
+  echo "Compilation successful. Compiled file: ${filename}c.pyc"
+else
+  echo "Compilation failed."
+fi
+
