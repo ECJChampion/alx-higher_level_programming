@@ -1,0 +1,5 @@
+106-line1.txt: 1 string object is created by the execution of the first line.
+106-line2.txt: 0 string objects are created by the execution of the second line since it references the existing string object.
+106-line3.txt: No, the string object pointed by a is not deleted. del a removes the reference but doesn't delete the object.
+106-line4.txt: No, the string object pointed by b is not deleted. del b removes the reference but doesn't delete the object.
+106-line5.txt: 1 string object is created by the execution of the last line.

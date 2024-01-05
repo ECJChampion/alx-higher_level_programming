@@ -1,0 +1,3 @@
+In CPython, integers from -5 to 256 are cached and reused. When you execute the first line a = 1, since the integer 1 falls within this range, it will not create a new int object but will instead reference the existing cached object. So, for a = 1, no new int objects are created.
+
+Similarly, for the second line b = 1, it's the same integer value, so it references the same cached object. Therefore, again, no new int objects are created for b = 1.

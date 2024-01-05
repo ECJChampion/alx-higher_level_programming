@@ -1,0 +1,5 @@
+104-line1.txt: "One integer object (1024) is created."
+104-line2.txt: "Another integer object (1024) is created. (Total count: 2)"
+104-line3.txt: "Yes, the reference to the integer object 1024 that a was pointing to is deleted, but the object itself might not be immediately deleted due to Python's garbage collection mechanism."
+104-line4.txt: "Similar to a, yes, the reference to the integer object 1024 that b was pointing to is deleted, but the object itself might not be immediately deleted."
+104-line5.txt: "Another integer object (1024) is created for variable c. (Total count: 3)"
