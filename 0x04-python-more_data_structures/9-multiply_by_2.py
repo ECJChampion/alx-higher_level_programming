@@ -11,11 +11,3 @@ def multiply_by_2(a_dictionary):
 
     # Return the new dictionary with multiplied values
     return multiplied_dict
-
-# Example usage:
-original_dict = {'a': 1, 'b': 2, 'c': 3}
-result_dict = multiply_by_2(original_dict)
-
-print("Original Dictionary:", original_dict)
-print("New Dictionary with Values Multiplied by 2:", result_dict)
-
